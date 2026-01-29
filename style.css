@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #fffcd1;
+    background-color: #fff198;
 }
 
 header {
@@ -27,7 +27,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 80vh;
+    min-height: 90vh;
 }
 
 .game-card {
@@ -65,6 +65,7 @@ h1 {
     border: 2px solid #575757;
     background-color: white;
     padding: .25rem;
+    cursor: pointer;
 }
 
 .move-display, .score-board {
@@ -88,3 +89,20 @@ h1 {
     gap: .25rem;
 }
 
+.ctrl-btns{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.ctrl-btns button{
+    border: 2px solid black;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #ffd284;
+    font-size: 1.10rem;
+    font-family: 'VT323', monospace;
+    cursor: pointer;
+}
