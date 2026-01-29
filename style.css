@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #fffcd1;
+}
+
 header {
     background-color: #ec6318;
     color: white;
@@ -23,8 +27,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    background-color: #ffe079;
+    min-height: 80vh;
 }
 
 .game-card {
@@ -63,3 +66,25 @@ h1 {
     background-color: white;
     padding: .25rem;
 }
+
+.move-display, .score-board {
+    font-family: 'VT323', monospace;
+    font-weight: 600;
+}
+
+.score-board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .25rem;
+    font-size: 1.10rem;
+}
+
+.move-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.10rem;
+    gap: .25rem;
+}
+
