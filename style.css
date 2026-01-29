@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ec6318;
+    color: white;
+    font-family: 'VT323', monospace;
+    padding: .5rem;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    min-height: 10vh;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffe079;
+}
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 5px solid black;
+    border-radius: 40px;
+    padding: 2rem;
+    width: 90vw;
+    max-width: 500px;
+    background-color: #ffd261;
+}
+
+.instruction {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.move-selection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.move-btn {
+    font-size: 2.5rem;
+    border-radius: 100px;
+    border: 2px solid #575757;
+    background-color: white;
+    padding: .25rem;
+}

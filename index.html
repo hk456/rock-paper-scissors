@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <title>Rock Paper Scissors!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="game-header">
+    <h1>Rock & Paper Scissors Game</h1>
+  </header>
+
+  <main class="container">
+    <div class="game-card">
+      <div class="move-selection">
+        <button class="move-btn">👊</button>
+        <button class="move-btn">✋</button>
+        <button class="move-btn">✌️</button>
+      </div>
+
+      <div class="instruction">Click To Play!</div>
+
+      <div class="score-board">
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="loss">0</span></p>
+        <p>Draws: <span id="draw">0</span></p>
+      </div>
+
+      <div class="move-display">
+        <p>Your Move: <span id="user-move">-</span></p>
+        <p>Computer's Move: <span id="computer-move">-</span></p>
+      </div>
+
+      <div class="ctrl-btns">
+        <button class="reset-btn">Reset</button>
+        <button class="autoplay-btn">Autoplay</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
