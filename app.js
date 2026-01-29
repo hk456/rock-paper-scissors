@@ -41,11 +41,37 @@ function pickComputerMove() {
     return move;
 }
 
-function updateDisplay(userMove, computerMove){
+function reset(){
+    score.wins = 0;
+    score.losses = 0;
+    score.draws = 0;
+}
+
+function autoplay(){
+    const computerMove1 = pickComputerMove();
+    const computerMove2 = pickComputerMove();
+    if (computerMove1 == computerMove2) {
+        score.draws++;
+    }
+    else if ((computerMove1 == 'rock' && computerMove2 == 'scissors')
+        || (computerMove1 == 'scissors' && computerMove2 == 'paper')
+        || (computerMove1 == 'paper' && computerMove2 == 'rock')) {
+        score.wins++;
+    }
+    else {
+        score.losses++;
+    }
+    updateGameValues();
+}
+
+function updateGameValues(){
     document.getElementById("wins").innerHTML = score.wins;
     document.getElementById("loss").innerHTML = score.losses;
     document.getElementById("draw").innerHTML = score.draws;
+}
 
+function updateDisplay(userMove, computerMove){
+    updateGameValues();
     document.getElementById('user-move').innerHTML = userMove;
     document.getElementById('computer-move').innerHTML = computerMove;
 }
