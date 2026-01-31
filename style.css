@@ -94,6 +94,7 @@ h1 {
 .ctrl-btns{
     display: flex;
     flex-direction: column;
+    width: 90%;
     gap: .75rem;
 }
 
@@ -109,8 +110,37 @@ h1 {
     cursor: pointer;
 }
 
-@media (min-width: 375px){
-    body{
-        background-color: white;
+@media (min-width: 1024px){
+    .game-header{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    .move-btn{
+        font-size: 4.5rem;
+    }    
+
+    .container{
+        min-height: 80vh;
+    }
+
+    .instruction {
+        font-size: 3rem;
+    }
+
+    .score-board, .move-display{
+        font-size: 2rem;
+    }
+
+    .ctrl-btns {
+        gap: 1.25rem;
+    }
+    
+    .ctrl-btns button {
+        font-size: 1.75rem;
     }
 }

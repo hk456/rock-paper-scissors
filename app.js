@@ -45,6 +45,8 @@ function reset(){
     score.wins = 0;
     score.losses = 0;
     score.draws = 0;
+    updateGameValues();
+    updateDisplay('-','-');
 }
 
 function autoplay(){
@@ -62,6 +64,8 @@ function autoplay(){
         score.losses++;
     }
     updateGameValues();
+    document.getElementById('user-move').innerHTML = '-';
+    document.getElementById('computer-move').innerHTML = computerMove1 + ", " + computerMove2;
 }
 
 function updateGameValues(){
